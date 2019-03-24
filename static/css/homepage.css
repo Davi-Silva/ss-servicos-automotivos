@@ -1,0 +1,19 @@
+.big-title {
+    display: block;
+    height: 50rem;
+    z-index: -999;
+    width: 100%;
+}
+
+.big-title .title h1,
+.big-title .title h4 {
+    color: #fff;
+    z-index: 999;
+    transform: translateY(20rem)
+}
+
+
+.consulting-section {
+    height: 400px;
+    background: #fff;
+}

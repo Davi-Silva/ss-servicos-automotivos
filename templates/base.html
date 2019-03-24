@@ -1,0 +1,20 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>SS Serviços Auotomotivos</title>
+        {% include "base/css.html" %}
+        {% load static %}
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png'%}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    </head>
+    <body>
+        {% include "base/navbar.html" %}
+
+        {% block content %}
+        
+        {% endblock content %}
+
+        {% include "base/footer.html" %}
+        {% include "base/js.html" %}
+    </body>
+</html>

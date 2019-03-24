@@ -1,0 +1,34 @@
+{% url 'homepage' as homepage_url %}
+{% url 'contact' as contact_url %}
+{% url 'consulting' as servico_url %}
+{% url 'about' as about_url %}
+
+<footer class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<img src="." alt="SS Serviços Automotivos" />
+		</div>
+		<div class="col-md-6">
+			<ul class="footer-navbar-menu">
+				<li><a href="{{ home_url }">HOME</a></li>
+				<li><a href="{{ contact_url }}">BLOG</a></li>
+				<li><a href="{{ product_list_url }}">SERVIÇOS</a></li>
+				<li><a href="{{ contact_url }}">CONTATO</a></li>
+				<li><a href="{{ about_url }}">SOBRE</a></li>
+			</ul>
+		</div>
+		<div class="col-md-12">
+			<hr/>
+		</div>
+		<div class="col-md-6">
+		<p class="copyright">© Copyright 2019 SS Serviços Automotivos</p>
+		</div>
+		<div class="col-md-6">
+			<ul class="social-media-list">
+				<li><a href="https://www.facebook.com/canadaecigs/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="https://www.instagram.com/canadaecigs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/canadaecigs" target="_blank"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
