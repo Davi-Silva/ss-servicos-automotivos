@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% url 'blog:mmx' as blog_mxx_url %}
+{% url 'blog:ets' as blog_ets_url %}
+{% url 'blog:vale' as blog_vale_url %}
+{% url 'blog:transpanorama' as blog_transpanorama_url %}
+
+
 {% block content %}
 {% load static %}
 <div class="big-title parallax-window" data-parallax="scroll" data-image-src="{% static 'img/car.jpg' %}">
@@ -14,79 +20,159 @@
     </div>
 </div>
 
-<section class="consulting-section">
+
+<section class="work-experience-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <head>
-                    <h2 class="text-center">Trajetória Profissional</h2>
-                </head>
-            </div>
-            <div class="col-md-3">
                 <header>
-                    <a href="#"><img src="{% static 'img/vale.jpg'%}" width="250px" height="250px" /></a>
-                    <h5 class="text-center">Vale</h5>
+                    <h2 class="text-center" id="section-title">TRAJETÓRIA PROFISSIONAL</h2>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{{ blog_vale_url }}" class="company-worked">
+                        <div class="work-experience-description-container">
+                            <strong>Vale</strong>
+                            <p id="description">
+                                Lorem Ipsum testing
+                            </p>
+                        </div>
+                        <img src="{% static 'img/vale-2.jpg'%}" />
+                    </a>
                 </header>
                 
 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <header>
-                    <a href="#"><img src="{% static 'img/mmx.jpg'%}" width="250px" height="250px" /></a>
-                    <h5 class="text-center">MMX</h5>
+                    <a href="{{ blog_mxx_url }}" class="company-worked">
+                        <div class="work-experience-description-container">
+                            <strong>MMX</strong>
+                            <p id="description">
+                                Lorem Ipsum testing
+                            </p>
+                        </div>
+                        <img src="{% static 'img/mmx-3.jpg'%}" />
+                    </a>
                 </header>
                 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <header>
-                    <a href="#"><img src="{% static 'img/ets.jpg'%}" width="250px" height="250px" /></a>
-                    <h5 class="text-center">ETS</h5>
+                    <a href="{{ blog_ets_url }}" class="company-worked">
+                        <div class="work-experience-description-container">
+                            <strong>ETS</strong>
+                            <p id="description">
+                                Lorem Ipsum testing
+                            </p>
+                        </div>
+                        <img src="{% static 'img/ets-2.jpg'%}" />
+                    </a>
                 </header>
                 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <header>
-                    <a href="#"><img src="{% static 'img/transpanorama.jpg'%}" width="250px" height="250px"/></a>
-                    <h5 class="text-center">Transpanorama</h5>
+                    <a href="{{ blog_transpanorama_url }}" class="company-worked">
+                        <div class="work-experience-description-container">
+                            <strong>Transpanorama</strong>
+                            <p id="description">
+                                Lorem Ipsum testing
+                            </p>
+                        </div>
+                        <img src="{% static 'img/transpanorama-2.jpg'%}" />
+                    </a>
                 </header>
                 
             </div>
         </div>
     </div>
 </section>
-<div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'img/car.jpg' %}">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="parallax-window about-section" data-parallax="scroll" data-image-src="{% static 'img/car5.jpg' %}" speed="1.0">
 
-<br>
-<br>
-<br>
-<br>
-<br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h2 class="text-center" id="section-title">SOBRE</h2>
+                </header>
+            </div>
+            <div class="col-md-12">
+                <div class="sobre-circel">
+                
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-4">
 
+                </div>
+                <div class="col-md-4">
 
-
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
 <section class="consulting-section">
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
 </section>
+
+<section class="parallax-window about-section" data-parallax="scroll" data-image-src="{% static 'img/car5.jpg' %}" speed="1.0">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h2 class="text-center">Entre em Contato</h2>
+                </header>
+                <form method="POST" action=".">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
 
 {% endblock content %}

@@ -69,6 +69,7 @@ body {
 .navbar-light .navbar-toggler {
   border-color: #fff;
   position: relative;
+  background: #fff;
 }
 
 .navbar-light .navbar-toggler span i {

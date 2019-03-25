@@ -1,10 +1,23 @@
 from django.shortcuts import redirect, render
 # from .forms import ContactForm
+from contact.forms import ContactForm
 
 
 def homepage(request):
+
+    if request.method == "POST":
+        contact_form = ContactForm(request.POST)
+        if contact_form.is_valid():
+            contact_form.save
+            return redirect("homepage")
+        else: 
+            print(contact_form.errors)
+    else:
+        contact_form = ContactForm()
+
     context = {
-        "title" : "SS Consultoria Automotiva"
+        "title" : "SS Consultoria Automotiva",
+        "form" : contact_form
     }
 
     return render(request, "homepage.html", context)
@@ -23,8 +36,3 @@ def about(request):
 
     return render(request, "about.html", context)
 
-def contact(request):
-    context= {
-        "title" : "Contact"
-    }
-    return render(request, "contact.html", context)

@@ -13,21 +13,69 @@
 }
 
 
-.consulting-section {
+.work-experience-section {
     background: #fff;
+    padding: 5rem 0;
 }
 
-.consulting-section a  {
+.work-experience-section #section-title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.work-experience-section #section-title::after {
+    content: '';
+    width: 13rem;
+    height: 3px;
+    background: grey;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(0.3rem);
+}
+
+.work-experience-section a  {
     height: 250px;
-    width: 250px;
+    width: 100%;
 }
 
-.consulting-section a img {
-    border-radius: 1%;
-    
+.work-experience-section .work-experience-description-container {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 100%;
+    padding: 15px;
 }
 
-.consulting-section h5 {
+.work-experience-section .col-md-6 {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+.work-experience-section .work-experience-description-container p {
+    color: #000;
+}
+
+.work-experience-section a img {
+    width: 100%;
+}
+
+.work-experience-section h5 {
     margin: 10px 0 0 0;
     font-size: 25px;
+}
+
+
+.about-section {
+
+}
+
+.about-section header {
+    padding: 2rem 0;
+}
+
+.about-section #section-title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
 }

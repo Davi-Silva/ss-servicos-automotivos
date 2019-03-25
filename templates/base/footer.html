@@ -1,6 +1,7 @@
 {% url 'homepage' as homepage_url %}
 {% url 'contact' as contact_url %}
-{% url 'consulting' as servico_url %}
+{% url 'blog:home' as blog_home_url %}
+{% url 'consulting' as consulting_url %}
 {% url 'about' as about_url %}
 
 <footer class="container">
@@ -10,9 +11,9 @@
 		</div>
 		<div class="col-md-6">
 			<ul class="footer-navbar-menu">
-				<li><a href="{{ home_url }">HOME</a></li>
-				<li><a href="{{ contact_url }}">BLOG</a></li>
-				<li><a href="{{ product_list_url }}">SERVIÇOS</a></li>
+				<li><a href="{{ homepage_url }">HOME</a></li>
+				<li><a href="{{ blog_home_url }}">BLOG</a></li>
+				<li><a href="{{ consulting_url }}">CONSULTORIA</a></li>
 				<li><a href="{{ contact_url }}">CONTATO</a></li>
 				<li><a href="{{ about_url }}">SOBRE</a></li>
 			</ul>
@@ -25,9 +26,7 @@
 		</div>
 		<div class="col-md-6">
 			<ul class="social-media-list">
-				<li><a href="https://www.facebook.com/canadaecigs/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a href="https://www.instagram.com/canadaecigs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://twitter.com/canadaecigs" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 			</ul>
 		</div>
 	</div>
