@@ -17,7 +17,7 @@ def contact(request):
         contact_form = ContactForm()
 
     context= {
-        "title" : "Contact",
+        "title" : "CONTATO",
         "form" : contact_form
     }
 

@@ -2,23 +2,33 @@
 
 {% block content %}
 
-<section class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <header>
-                <h1 class="text-center">{{ title }}</h1>
-            </header>
-        </div>
-        <div class="col-md-12">
-            <form method="POST" action="../">
-                {% csrf_token %}
-                {{ form }}
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+{% load static %}
+
+<div class="contact-page">
+    <header class="big-title parallax-window" data-parallax="scroll" data-image-src="{% static 'img/dirt-road.jpg' %}">
+        <h1 class="text-center">{{ title }}</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="POST" action="../">
+                    {% csrf_token %}
+                        {{ form.as_p }}
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
 
 
+        </div>
     </div>
-</section>
+
+</div>
+
+
+
+
+
+
 
 {% endblock content %}

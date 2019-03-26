@@ -4,10 +4,11 @@
 {% url 'consulting' as consulting_url %}
 {% url 'about' as about_url %}
 
+{% load static %}
 <footer class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<img src="." alt="SS Serviços Automotivos" />
+			<img src="{% static 'img/ss-logo-1.png' %}" alt="SS Serviços Automotivos" />
 		</div>
 		<div class="col-md-6">
 			<ul class="footer-navbar-menu">

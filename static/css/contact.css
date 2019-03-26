@@ -1,0 +1,67 @@
+
+.contact-page .big-title {
+    height: 400px;
+}
+
+.contact-page .big-title h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    transform: translateY(150px);
+}
+
+.contact-page form {
+    box-sizing: border-box;
+    margin: 3rem;
+}
+
+.contact-page p {
+    margin-bottom: 0.5rem;
+}
+.contact-page form p input,
+.contact-page form p textarea {
+    display: block;
+    max-width: 35rem;
+    min-width: 5rem;
+    margin:  auto;
+    padding: 10px 30px;
+    background: rgb(73, 80, 87, 0.2);
+    text-align: center;
+    color: #495057;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    transition: 0.3s all ease-in-out;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page form p textarea {
+    resize: none;
+}
+
+.contact-page form button {
+    display: block;
+    max-width: 35rem;
+    min-width: 5rem;
+    text-align: center;
+    font-size: 25px;
+    color: #495057;
+    margin: 0 auto 3rem auto;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+}
+
+.contact-page form button:active {
+    transform: translateY(2px);
+}
+
+.contact-page form p input:focus,
+.contact-page form p textarea:focus,
+.contact-page form button:focus {
+    outline: none;
+    box-shadow: none;
+    transition: 0.3s all ease-in-out;
+}
