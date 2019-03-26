@@ -1,7 +1,7 @@
 from django import forms
 from.models import Contact
 
-class ContactForm(forms.Form):
+class ContactForm(forms.ModelForm):
     fullname = forms.CharField(
         label="",
         widget=forms.TextInput(
@@ -58,7 +58,7 @@ class ContactForm(forms.Form):
     class Meta:
         model = Contact
         fields = [
-            'name',
+            'fullname',
             'email',
             'phone',
             'subject',

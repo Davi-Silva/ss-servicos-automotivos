@@ -28,7 +28,7 @@ def consulting(request):
 
 def about(request):
     context = {
-        "title" : "Consultoria"
+        "title" : "SOBRE"
     }
 
     return render(request, "about.html", context)

@@ -2,6 +2,57 @@
 
 {% block content %}
 
-<h1>Sobre</h1>
+{% load static %}
+
+<div class="about-page">
+    <header class="big-title parallax-window" data-parallax="scroll" data-image-src="{% static 'img/info.jpg' %}">
+        <h1 class="text-center">{{ title }}</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about-container">
+                    <p>
+                    Profissional com mais de 30 anos de 
+                    experiência e vivência em manutenção de 
+                    frotas de caminhões rodoviários e fora de 
+                    estrada, automóveis, equipamentos de mineração 
+                    e construção, como carregadeiras de rodas, 
+                    tratores de esteira e pneus, escavadeiras, 
+                    perfuratrizes e guindastes. 
+                    </p>
+                    <p>
+                    Sou técnico em 
+                    mecânica formado pela Escola Técnica Federal 
+                    do Espirito Santo – ETFES, atual IFES, graduado 
+                    em Administração de Empresas, e pós-graduado em 
+                    Engenharia de Manutenção pela Universidade Federal 
+                    do Espirito Santo – UFES, com o título de Especialista 
+                    em Manutenção, com especialidade em “Planejamento, 
+                    programação e controle da manutenção”. Atuei em grandes 
+                    empresas no Brasil. Iniciei minha vida profissional 
+                    como mecânico de maquinas, caminhões e automóveis, 
+                    conhecendo e vivenciando as evoluções deste segmento 
+                    ao longo dos anos. Sempre busco o aperfeiçoamento e 
+                    atualização em novas tecnologias, de modo a me manter 
+                    atualizado frente ao mercado.
+                    </p>
+                
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
 
 {% endblock content %}

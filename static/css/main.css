@@ -10,9 +10,14 @@ body {
     width: 100%;
 }
 
+.fas {
+  font-family: 'Font Awesome 5 Free'!important;
+  font-weight: 900;
+}
+
 .fab {
   font-family: 'Font Awesome 5 Brands'!important;
-  font-weight: 400;
+  font-weight: 400; 
 }
 
 /* NAVBAR */

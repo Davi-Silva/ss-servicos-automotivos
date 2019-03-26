@@ -65,3 +65,25 @@
     box-shadow: none;
     transition: 0.3s all ease-in-out;
 }
+
+.contact-page #phone {
+    color: #495057;
+    line-height: 15px;
+}
+
+.contact-page #phone:hover {
+    text-decoration: none;
+}
+
+.contact-page #phone i {
+    text-align: center;
+    display: block;
+    font-size: 27px;
+}
+
+.contact-page #phone p {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    margin: 0;
+}

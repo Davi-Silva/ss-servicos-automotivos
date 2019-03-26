@@ -1,0 +1,20 @@
+
+.about-page .big-title {
+    height: 400px;
+}
+
+.about-page .big-title h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    transform: translateY(150px);
+}
+
+.about-page .about-container {
+    margin: 4rem 0 2rem 0;
+}
+
+.about-page .about-container p {
+    color: #333;
+    font-size: 20px;
+}
