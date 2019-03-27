@@ -1,5 +1,41 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
+    <div class="company-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 parallax-window" data-parallax="scroll"
+                     data-image-src="{% static 'img/vale-2.jpg' %}">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-6">
+                    <h1>{{ title }}</h1>
+                    <div class="description">
+                        <p>
+                            Gerenciamento da manutenção das frotas de caminhões, escavadeiras, guindastes, carregadeiras
+                            e demais equipamentos móveis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
 
 {% endblock content %}

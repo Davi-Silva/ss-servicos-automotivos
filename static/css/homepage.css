@@ -89,6 +89,30 @@
     width: 100%;
 }
 
+.work-experience-section header {
+    margin-bottom: 2.5rem;
+}
+
+.work-experience-section header p {
+    text-align: center;
+}
+
+.work-experience-section header p a {
+    color: #37669d;
+    font-size: 18px;
+    padding: 7px 10px;
+    border: 3px solid #37669d;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.work-experience-section header p a:hover {
+    background: #37669d;
+    color: #fff;
+    text-decoration: none;
+}
+
 .work-experience-section .work-experience-description-container {
     position: absolute;
     background: rgba(255, 255, 255, 1);
@@ -155,6 +179,12 @@
     font-size: 22px;
     margin-top: 15px;
     letter-spacing: 1px;
+}
+
+.about-section #linkedin {
+    border: unset;
+    margin: 0 auto;
+    font-size: 25px;
 }
 
 .about-section p {
@@ -235,7 +265,7 @@
     min-width: 5rem;
     margin:  auto;
     padding: 10px 30px;
-    background: rgb(73, 80, 87, 0.2);
+    background: rgba(73, 80, 87, 0.2);
     text-align: center;
     color: #495057;
     border: none;
@@ -282,4 +312,13 @@
 
 .contact-section form button:active {
     transform: translateY(2px);
+}
+
+
+
+@media screen and (max-width: 408px) {
+    .consulting-section #consulting-img {
+        height: 250px!important;
+        width: 250px!important;
+    }
 }

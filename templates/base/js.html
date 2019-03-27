@@ -15,8 +15,9 @@ slim is missing ajax -->
 
 <!-- Custom JS -->
 <script src='{% static "js/main.js" %}'></script>
+{% if request.path == "/" %}
 <script src='{% static "js/homepage.js" %}'></script>
-
+{% endif %}
 
 <!-- Parallax.js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

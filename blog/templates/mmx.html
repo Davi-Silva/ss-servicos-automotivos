@@ -1,5 +1,43 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
+    <div class="company-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 parallax-window" data-parallax="scroll"
+                     data-image-src="{% static 'img/vale-2.jpg' %}">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-6">
+                    <h1>{{ title }}</h1>
+                    <div class="description">
+                        <p>
+                            Gerenciamento da manutenção das frotas de equipamentos de mina (Caminhões, carregadeiras,
+                            escavadeiras), nas minas do complexo Serra Azul, Igarapé/MG, destacando também o
+                            desenvolvimento e implantação de planejamento e controle da manutenção, e construção da
+                            oficina de equipamentos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
 
 {% endblock content %}

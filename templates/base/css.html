@@ -10,9 +10,25 @@
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{% static '/css/main.css' %}" />
-<link rel="stylesheet" href="{% static '/css/homepage.css' %}" />
+{% if 'contato' in request.path %}
 <link rel="stylesheet" href="{% static '/css/contact.css' %}" />
+{% endif %}
+
+{% if 'sobre' in request.path %}
 <link rel="stylesheet" href="{% static '/css/about.css' %}" />
+{% endif %}
+
+{% if 'consultoria' in request.path %}
+<link rel="stylesheet" href="{% static '/css/consulting.css' %}" />
+{% endif %}
+
+{% if request.path == "/" %}
+<link rel="stylesheet" href="{% static '/css/homepage.css' %}" />
+{% endif %}
+
+{% if 'vale' in request.path %}
+<link rel="stylesheet" href="{% static '/css/company-page.css' %}" />
+{% endif %}
 
 <!-- Custom Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">

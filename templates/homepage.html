@@ -1,197 +1,224 @@
 {% extends "base.html" %}
 
-{% url 'about' as about_url %}
-{% url 'blog:mmx' as blog_mxx_url %}
-{% url 'blog:ets' as blog_ets_url %}
-{% url 'blog:vale' as blog_vale_url %}
-{% url 'blog:transpanorama' as blog_transpanorama_url %}
-
 {% block content %}
-{% load static %}
-<div class="big-title parallax-window" data-parallax="scroll" data-image-src="{% static 'img/car.jpg' %}">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="title">
-                    <h1 class="text-center">{{ title }}</h1>
+    {% load static %}
+    <div class="big-title parallax-window" data-parallax="scroll" data-image-src="{% static 'img/car.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h1 class="text-center">{{ title }}</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<section class="consulting-section">
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <header>
-                <h2 class=text-center id="section-title">SERVIÇO</h2>
-            </header>
-        </div>
-        <div class="col-md-7">
-            <p>
-                A SS Autoconsulting oferece a você, que deseja adquirir um veículo 
-                usado ou seminovo, a segurança de realizar sua compra sem medo. Fazemos 
-                avaliação do veículo pretendido, observando os aspectos de funcionamento 
-                do motor, transmissão, suspensão, sistemas elétricos, freios, integridade 
-                estrutural e estética, e por fim, uma varredura no sistema eletrônico em 
-                busca de possíveis falhas presentes. Dessa forma, podemos emitir nosso 
-                parecer profissional de forma a te dar subsídios para sua tomada de decisão.
-            </p>
-        </div>
-        <div class="col-md-5">
-            <img id="consulting-img" alt="Consultoria" src="{% static '/img/office.jpg' %}"/>
-        </div>
-        <div class="col-md-12">
-            <a href="{{ consulting_url }}">SAIBA MAIS</a>
-        </div>
-    </div>
-</div>
-
-</section>
-
-<section class="work-experience-section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <header>
-                    <h2 class="text-center" id="section-title">TRAJETÓRIA PROFISSIONAL</h2>
-                </header>
-            </div>
-            <div class="col-md-6">
-                <header>
-                    <a href="{{ blog_vale_url }}" class="company-worked" id="one">
-                        <div class="work-experience-description-container">
-                            <strong>Vale</strong>
-                            <p id="description">
-                                Lorem Ipsum testing
-                            </p>
-                        </div>
-                        <img src="{% static 'img/vale-2.jpg'%}" />
-                    </a>
-                </header>
-                
-
-            </div>
-            <div class="col-md-6">
-                <header>
-                    <a href="{{ blog_mxx_url }}" class="company-worked"id="two">
-                        <div class="work-experience-description-container">
-                            <strong class="text-center">MMX</strong>
-                            <p id="description">
-                                Lorem Ipsum testing
-                            </p>
-                        </div>
-                        <img src="{% static 'img/mmx-3.jpg'%}" />
-                    </a>
-                </header>
-                
-            </div>
-            <div class="col-md-6">
-                <header>
-                    <a href="{{ blog_ets_url }}" class="company-worked" id="three">
-                        <div class="work-experience-description-container">
-                            <strong>ETS</strong>
-                            <p id="description">
-                                Lorem Ipsum testing
-                            </p>
-                        </div>
-                        <img src="{% static 'img/ets-2.jpg'%}" />
-                    </a>
-                </header>
-                
-            </div>
-            <div class="col-md-6">
-                <header>
-                    <a href="{{ blog_transpanorama_url }}" class="company-worked" id="four">
-                        <div class="work-experience-description-container">
-                            <strong>Transpanorama</strong>
-                            <p id="description">
-                                Lorem Ipsum testing
-                            </p>
-                        </div>
-                        <img src="{% static 'img/transpanorama-2.jpg'%}" />
-                    </a>
-                </header>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<div class="about-section" >
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <header>
-                    <h2 class="text-center" id="section-title">SOBRE</h2>
-                </header>
-            </div>
-            <div class="col-md-5">
-                <img src="{% static 'img/profile.jpeg' %}" alt="Milton Santos" />
-                <h6 class="text-center">Milton Santos Silva</h6>
-            </div>
-            <div class="col-md-7">
+    <section class="consulting-section">
+        <div class="container">
+            <div class="row">
                 <div class="col-md-12">
                     <header>
-                        <h3 class="text-center" id="header-educacao">FORMAÇÃO</h3>
+                        <h2 class=text-center id="section-title">SERVIÇO</h2>
                     </header>
+                </div>
+                <div class="col-md-7">
                     <p>
-                        Donec ornare enim quis massa imperdiet, et posuere nunc consequat. 
-                        Vestibulum posuere velit urna, et fermentum magna sagittis et. 
-                        Praesent rhoncus dignissim aliquam. Aliquam iaculis, arcu eu molestie malesuada, 
-                        quam ipsum vulputate odio, in placerat purus enim sed libero. Fusce vel ex leo. 
-                        Vestibulum eleifend neque quis dictum hendrerit. Maecenas non tristique risus.
+                        A SS Autoconsulting oferece a você, que deseja adquirir um veículo
+                        usado ou seminovo, a segurança de realizar sua compra sem medo. Fazemos
+                        avaliação do veículo pretendido, observando os aspectos de funcionamento
+                        do motor, transmissão, suspensão, sistemas elétricos, freios, integridade
+                        estrutural e estética, e por fim, uma varredura no sistema eletrônico em
+                        busca de possíveis falhas presentes. Dessa forma, podemos emitir nosso
+                        parecer profissional de forma a te dar subsídios para sua tomada de decisão.
                     </p>
+                </div>
+                <div class="col-md-5">
+                    <img id="consulting-img" alt="Consultoria" src="{% static '/img/office.jpg' %}"/>
                 </div>
                 <div class="col-md-12">
-                    <header>
-                        <h3 class="text-center" id="header-educacao">PROFISSIONAL</h3>
-                    </header>
-                     <p>
-                        Donec ornare enim quis massa imperdiet, et posuere nunc consequat. 
-                        Vestibulum posuere velit urna, et fermentum magna sagittis et. 
-                        Praesent rhoncus dignissim aliquam. Aliquam iaculis, arcu eu molestie malesuada, 
-                        quam ipsum vulputate odio, in placerat purus enim sed libero. Fusce vel ex leo. 
-                        Vestibulum eleifend neque quis dictum hendrerit. Maecenas non tristique risus.
-                    </p>
+                    <a href="{{ consulting_url }}">SAIBA MAIS</a>
                 </div>
             </div>
-            <div class="col-md-12">
-                <a href="{{ about_url }}" class=text-center>SAIBA MAIS</a>
+        </div>
+
+    </section>
+
+    <section class="work-experience-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <header>
+                        <h2 class="text-center" id="section-title">TRAJETÓRIA PROFISSIONAL</h2>
+                        <p><a href="{% url 'blog:list' %}">VER LISTA COMPLETA</a></p>
+                    </header>
+                </div>
+                <div class="col-md-6">
+                    <header>
+                        <a href="{% url 'blog:vale' %}" class="company-worked" id="one">
+                            <div class="work-experience-description-container">
+                                <strong>Vale</strong>
+                                <p id="description">
+                                    Clique para mais detalhes
+                                </p>
+                            </div>
+                            <img src="{% static 'img/vale-2.jpg' %}"/>
+                        </a>
+                    </header>
+
+
+                </div>
+                <div class="col-md-6">
+                    <header>
+                        <a href="{% url 'blog:mmx' %}" class="company-worked" id="two">
+                            <div class="work-experience-description-container">
+                                <strong class="text-center">MMX</strong>
+                                <p id="description">
+                                    Clique para mais detalhes
+                                </p>
+                            </div>
+                            <img src="{% static 'img/mmx-3.jpg' %}"/>
+                        </a>
+                    </header>
+
+                </div>
+                <div class="col-md-6">
+                    <header>
+                        <a href="{% url 'blog:ets' %}" class="company-worked" id="three">
+                            <div class="work-experience-description-container">
+                                <strong>ETS</strong>
+                                <p id="description">
+                                    Clique para mais detalhes
+                                </p>
+                            </div>
+                            <img src="{% static 'img/ets-2.jpg' %}"/>
+                        </a>
+                    </header>
+
+                </div>
+                <div class="col-md-6">
+                    <header>
+                        <a href="{% url 'blog:harsco' %}" class="company-worked" id="four">
+                            <div class="work-experience-description-container">
+                                <strong>Harsco</strong>
+                                <p id="description">
+                                    Clique para mais detalhes
+                                </p>
+                            </div>
+                            <img src="{% static 'img/transpanorama-2.jpg' %}"/>
+                        </a>
+                    </header>
+
+                </div>
+
+                <div class="col-md-6">
+                    <header>
+                        <a href="{% url 'blog:manserv' %}" class="company-worked" id="four">
+                            <div class="work-experience-description-container">
+                                <strong>Manserv</strong>
+                                <p id="description">
+                                    Clique para mais detalhes
+                                </p>
+                            </div>
+                            <img src="{% static 'img/transpanorama-2.jpg' %}"/>
+                        </a>
+                    </header>
+
+                </div>
+                <div class="col-md-6">
+                    <header>
+                        <a href="{% url 'blog:abb' %}" class="company-worked" id="four">
+                            <div class="work-experience-description-container">
+                                <strong>ABB</strong>
+                                <p id="description">
+                                    Clique para mais detalhes
+                                </p>
+                            </div>
+                            <img src="{% static 'img/transpanorama-2.jpg' %}"/>
+                        </a>
+                    </header>
+
+                </div>
+
             </div>
-            {% comment %} <div class="col-md-6">
+        </div>
+    </section>
+
+
+    <div class="about-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <header>
+                        <h2 class="text-center" id="section-title">SOBRE</h2>
+                    </header>
+                </div>
+                <div class="col-md-5">
+                    <img src="{% static 'img/profile.jpeg' %}" alt="Milton Santos"/>
+                    <h6 class="text-center">Milton Santos Silva</h6>
+                    <a id="linkedin" href="https://www.linkedin.com/in/milton-santos-7a53712a/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-md-7">
+                    <div class="col-md-12">
+                        <header>
+                            <h3 class="text-center" id="header-educacao">FORMAÇÃO</h3>
+                        </header>
+                        <p>
+                            Donec ornare enim quis massa imperdiet, et posuere nunc consequat.
+                            Vestibulum posuere velit urna, et fermentum magna sagittis et.
+                            Praesent rhoncus dignissim aliquam. Aliquam iaculis, arcu eu molestie malesuada,
+                            quam ipsum vulputate odio, in placerat purus enim sed libero. Fusce vel ex leo.
+                            Vestibulum eleifend neque quis dictum hendrerit. Maecenas non tristique risus.
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <header>
+                            <h3 class="text-center" id="header-educacao">PROFISSIONAL</h3>
+                        </header>
+                        <p>
+                            Donec ornare enim quis massa imperdiet, et posuere nunc consequat.
+                            Vestibulum posuere velit urna, et fermentum magna sagittis et.
+                            Praesent rhoncus dignissim aliquam. Aliquam iaculis, arcu eu molestie malesuada,
+                            quam ipsum vulputate odio, in placerat purus enim sed libero. Fusce vel ex leo.
+                            Vestibulum eleifend neque quis dictum hendrerit. Maecenas non tristique risus.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <a href="{{ about_url }}" class=text-center>SAIBA MAIS</a>
+                </div>
+                {% comment %} <div class="col-md-6">
                 <header>
                     <h3 class="text-center" id="header-profissional">PROFISSIONAL</h3>
                 </header>
             </div> {% endcomment %}
-        </div>
-    </div>
-
-
-</div>
-
-<section class="contact-section" >
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <header>
-                    <h2 class="text-center" id="section-title">ENTRE EM CONTATO</h2>
-                </header>
-                <form method="POST" action=".">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Enviar</button>
-                </form>
             </div>
         </div>
+
+
     </div>
 
+    <section class="contact-section">
 
-</section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <header>
+                        <h2 class="text-center" id="section-title">ENTRE EM CONTATO</h2>
+                    </header>
+                    <form method="POST" action=".">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
 
 
 {% endblock content %}

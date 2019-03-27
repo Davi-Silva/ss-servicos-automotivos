@@ -8,7 +8,7 @@ from contact import views as contact_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage, name="homepage"),  
-    path('blog/', include('blog.urls'), name="blog"),
+    path('blog/', include('blog.urls', namespace="blog"), name="blog"),
     path('consultoria', consulting, name="consulting"),
     path('sobre', about, name="about"),
     path('contato', contact_view.contact, name="contact")

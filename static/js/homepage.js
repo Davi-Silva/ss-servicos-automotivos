@@ -48,3 +48,29 @@ companyWorked[3].addEventListener('mouseout', () => {
     companyWorked[3].style.transition = "all 0.4s ease-in-out"
 })
 
+companyWorked[4].addEventListener('mouseover', () => {
+    console.log(companyWorked)
+    companyWorked[4].style.opacity = "1"
+    companyWorked[4].style.transition = "all 0.4s ease-in-out"
+})
+
+companyWorked[4].addEventListener('mouseout', () => {
+    console.log(companyWorked)
+    companyWorked[4].style.opacity = "0"
+    companyWorked[4].style.transition = "all 0.4s ease-in-out"
+})
+
+
+companyWorked[5].addEventListener('mouseover', () => {
+    console.log(companyWorked)
+    companyWorked[5].style.opacity = "1"
+    companyWorked[5].style.transition = "all 0.4s ease-in-out"
+})
+
+companyWorked[3].addEventListener('mouseout', () => {
+    console.log(companyWorked)
+    companyWorked[3].style.opacity = "0"
+    companyWorked[3].style.transition = "all 0.4s ease-in-out"
+})
+
+

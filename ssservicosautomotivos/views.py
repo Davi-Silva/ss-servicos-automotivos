@@ -14,7 +14,7 @@ def homepage(request):
     else:
         contact_form = ContactForm()
     context = {
-        "title" : "SS CONSULTORIA AUTOMOTIVA",
+        "title" : "SS CONSULTING",
         "form" : contact_form
     }
     return render(request, "homepage.html", context)
@@ -22,7 +22,7 @@ def homepage(request):
 
 def consulting(request):
     context = {
-        "title" : "Consultoria"
+        "title" : "CONSULTORIA"
     }
     return render(request, "consulting.html", context)
 
