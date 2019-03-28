@@ -212,13 +212,16 @@ footer img {
   footer .social-media-list {
     display: block;
     float: unset;
+    text-align: center;
     margin: 10px auto!important;
     position: relative;
   }
 
   footer .social-media-list li {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     text-align: center;
   }
+
 }
+

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     # own
     'blog',
-    'contact'
+    'contact',
+    'quotes'
 ]
 
 MIDDLEWARE = [

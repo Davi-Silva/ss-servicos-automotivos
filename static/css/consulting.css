@@ -12,9 +12,32 @@
 
 .consulting-page .consulting-container {
     margin: 4rem 0 2rem 0;
+    display: block;
 }
 
 .consulting-page .consulting-container p {
-    color: #333;
+    color: #555;
     font-size: 25px;
+    text-align: justify;
+}
+
+.consulting-page a {
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: #555;
+    display: table;
+    border: 3px solid #555;
+    transition: all .3s ease-in-out;
+}
+
+.consulting-page a:hover {
+    text-decoration: none;
+    background: #fff;
+    color: #555;
+    border: 3px solid #555;
 }

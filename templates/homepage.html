@@ -62,7 +62,7 @@
                                     Clique para mais detalhes
                                 </p>
                             </div>
-                            <img src="{% static 'img/vale-3.jpg' %}"/>
+                            <img src="{% static 'img/vale-7.jpg' %}"/>
                         </a>
                     </header>
                 </div>
@@ -75,7 +75,7 @@
                                     Clique para mais detalhes
                                 </p>
                             </div>
-                            <img src="{% static 'img/abb.jpg' %}"/>
+                            <img src="{% static 'img/abb-larger.jpg' %}"/>
                         </a>
                     </header>
                 </div>
@@ -88,7 +88,7 @@
                                     Clique para mais detalhes
                                 </p>
                             </div>
-                            <img src="{% static 'img/fosfertil.jpg' %}"/>
+                            <img src="{% static 'img/fosfertil-5.jpg' %}"/>
                         </a>
                     </header>
                 </div>
@@ -101,7 +101,7 @@
                                     Clique para mais detalhes
                                 </p>
                             </div>
-                            <img src="{% static 'img/mmx-3.jpg' %}"/>
+                            <img src="{% static 'img/mmx-13.jpg' %}"/>
                         </a>
                     </header>
                 </div>
@@ -114,7 +114,7 @@
                                     Clique para mais detalhes
                                 </p>
                             </div>
-                            <img src="{% static 'img/harsco.jpg' %}"/>
+                            <img src="{% static 'img/harsco-8.jpg' %}"/>
                         </a>
                     </header>
                 </div>
@@ -127,7 +127,7 @@
                                     Clique para mais detalhes
                                 </p>
                             </div>
-                            <img src="{% static 'img/ets-2.jpg' %}"/>
+                            <img src="{% static 'img/ets-28.jpg' %}"/>
                         </a>
                     </header>
                 </div>
@@ -157,11 +157,11 @@
                             <h3 class="text-center" id="header-educacao">FORMAÇÃO</h3>
                         </header>
                         <p>
-                            Donec ornare enim quis massa imperdiet, et posuere nunc consequat.
-                            Vestibulum posuere velit urna, et fermentum magna sagittis et.
-                            Praesent rhoncus dignissim aliquam. Aliquam iaculis, arcu eu molestie malesuada,
-                            quam ipsum vulputate odio, in placerat purus enim sed libero. Fusce vel ex leo.
-                            Vestibulum eleifend neque quis dictum hendrerit. Maecenas non tristique risus.
+                            Sou técnico em mecânica formado pela Escola Técnica Federal do Espirito Santo – ETFES, 
+                            atual IFES, graduado em Administração de Empresas, e pós-graduado em Engenharia de 
+                            Manutenção pela Universidade Federal do Espirito Santo – UFES, com o título de 
+                            Especialista em Manutenção, com especialidade em “Planejamento, programação e controle 
+                            da manutenção”...
                         </p>
                     </div>
                     <div class="col-md-12">
@@ -169,22 +169,16 @@
                             <h3 class="text-center" id="header-educacao">PROFISSIONAL</h3>
                         </header>
                         <p>
-                            Donec ornare enim quis massa imperdiet, et posuere nunc consequat.
-                            Vestibulum posuere velit urna, et fermentum magna sagittis et.
-                            Praesent rhoncus dignissim aliquam. Aliquam iaculis, arcu eu molestie malesuada,
-                            quam ipsum vulputate odio, in placerat purus enim sed libero. Fusce vel ex leo.
-                            Vestibulum eleifend neque quis dictum hendrerit. Maecenas non tristique risus.
+                            Profissional com mais de 30 anos de experiência e vivência em manutenção de frotas 
+                            de caminhões rodoviários e fora de estrada, automóveis, equipamentos de mineração e 
+                            construção, como carregadeiras de rodas, tratores de esteira e pneus, escavadeiras, 
+                            perfuratrizes e guindastes. 
                         </p>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <a href="{{ about_url }}" class=text-center>SAIBA MAIS</a>
+                    <a href="{% url 'about' %}" class=text-center>SAIBA MAIS</a>
                 </div>
-                {% comment %} <div class="col-md-6">
-                <header>
-                    <h3 class="text-center" id="header-profissional">PROFISSIONAL</h3>
-                </header>
-            </div> {% endcomment %}
             </div>
         </div>
 
@@ -199,11 +193,7 @@
                     <header>
                         <h2 class="text-center" id="section-title">ENTRE EM CONTATO</h2>
                     </header>
-                    <form method="POST" action=".">
-                        {% csrf_token %}
-                        {{ form.as_p }}
-                        <button type="submit">Enviar</button>
-                    </form>
+                    {% include "snippets/contact_form.html" %}
                 </div>
             </div>
         </div>

@@ -62,8 +62,9 @@
 }
 
 .work-experience-section {
-    background: #fff;
+    background: transparent;
     padding: 5rem 0 0 0;
+    margin-bottom: -1px;
 }
 
 .consulting-section #section-title,

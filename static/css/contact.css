@@ -10,6 +10,26 @@
     transform: translateY(150px);
 }
 
+.contact-page .sub {
+    margin: 20px 0 10px 0;
+}
+
+.contact-page .sub .start-consulting {
+    font-size: 20px;
+    
+}
+
+.contact-page .sub .quote {
+    font-size: 26px;
+    line-height: 1rem;
+}
+
+.contact-page .sub p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #495057;
+}
+
 .contact-page form {
     box-sizing: border-box;
     margin: 3rem;
@@ -78,7 +98,7 @@
 .contact-page #phone i {
     text-align: center;
     display: block;
-    font-size: 27px;
+    font-size: 23px;
 }
 
 .contact-page #phone p {

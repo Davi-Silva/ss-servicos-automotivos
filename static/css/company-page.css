@@ -4,8 +4,31 @@
     margin-top: 2rem;
 }
 
+.company-page .description {
+    padding: 2.5rem;
+}
+
+.company-page .description .occupation,
+.company-page .description .location,
+.company-page .description .job {
+    margin: 0 0 2rem 0;
+}
+
+.company-page .description .location #address {
+    padding: 0!important;
+    font-size: 1.3rem;
+}
+
+.company-page .description .job ul {
+    list-style: none;
+}
+
+.company-page .description .job ul li {
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
 .company-page .description p {
-    padding: 1.5rem;
     font-size: 1.3rem;
     text-align: justify;
 }
