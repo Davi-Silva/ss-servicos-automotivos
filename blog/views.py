@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def blog_home(request):
+    return redirect('homepage')
     return render(request, "home.html", {})
 
 

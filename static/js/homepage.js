@@ -67,10 +67,10 @@ companyWorked[5].addEventListener('mouseover', () => {
     companyWorked[5].style.transition = "all 0.4s ease-in-out"
 })
 
-companyWorked[3].addEventListener('mouseout', () => {
+companyWorked[5].addEventListener('mouseout', () => {
     console.log(companyWorked)
-    companyWorked[3].style.opacity = "0"
-    companyWorked[3].style.transition = "all 0.4s ease-in-out"
+    companyWorked[5].style.opacity = "0"
+    companyWorked[5].style.transition = "all 0.4s ease-in-out"
 })
 
 

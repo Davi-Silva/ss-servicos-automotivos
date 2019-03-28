@@ -1,10 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block content %}
+{% load static %}
+<div class="work-experience-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <header class="section-header">
+                    <h2 class="text-center" id="section-title">TRAJETÓRIA PROFISSIONAL</h2>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{% url 'blog:vale' %}" class="company-worked" id="one">
+                        <div class="work-experience-description-container">
+                            <strong>Vale</strong>
+                            <p id="description">
+                                Clique para mais detalhes
+                            </p>
+                        </div>
+                        <img src="{% static 'img/vale-3.jpg' %}"/>
+                    </a>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{% url 'blog:abb' %}" class="company-worked" id="four">
+                        <div class="work-experience-description-container">
+                            <strong>ABB</strong>
+                            <p id="description">
+                                Clique para mais detalhes
+                            </p>
+                        </div>
+                        <img src="{% static 'img/abb.jpg' %}"/>
+                    </a>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{% url 'blog:manserv' %}" class="company-worked" id="four">
+                        <div class="work-experience-description-container">
+                            <strong>Manserv</strong>
+                            <p id="description">
+                                Clique para mais detalhes
+                            </p>
+                        </div>
+                        <img src="{% static 'img/fosfertil.jpg' %}"/>
+                    </a>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{% url 'blog:mmx' %}" class="company-worked" id="two">
+                        <div class="work-experience-description-container">
+                            <strong class="text-center">MMX</strong>
+                            <p id="description">
+                                    Clique para mais detalhes
+                            </p>
+                        </div>
+                        <img src="{% static 'img/mmx-3.jpg' %}"/>
+                    </a>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{% url 'blog:harsco' %}" class="company-worked" id="four">
+                        <div class="work-experience-description-container">
+                            <strong>Harsco</strong>
+                            <p id="description">
+                                Clique para mais detalhes
+                            </p>
+                        </div>
+                        <img src="{% static 'img/harsco.jpg' %}"/>
+                    </a>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{% url 'blog:ets' %}" class="company-worked" id="three">
+                        <div class="work-experience-description-container">
+                            <strong>ETS</strong>
+                            <p id="description">
+                                Clique para mais detalhes
+                            </p>
+                        </div>
+                        <img src="{% static 'img/ets-2.jpg' %}"/>
+                    </a>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <header>
+                    <a href="{% url 'blog:transpanorama' %}" class="company-worked" id="three">
+                        <div class="work-experience-description-container">
+                            <strong>Transpanorama</strong>
+                            <p id="description">
+                                Clique para mais detalhes
+                            </p>
+                        </div>
+                        <img src="{% static 'img/transpanorama-2.jpg' %}"/>
+                    </a>
+                </header>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

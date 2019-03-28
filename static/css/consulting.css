@@ -10,11 +10,11 @@
     transform: translateY(150px);
 }
 
-.consulting-page .about-container {
+.consulting-page .consulting-container {
     margin: 4rem 0 2rem 0;
 }
 
-.consulting-page .about-container p {
+.consulting-page .consulting-container p {
     color: #333;
-    font-size: 20px;
+    font-size: 25px;
 }
