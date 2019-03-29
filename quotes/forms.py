@@ -35,7 +35,7 @@ class QuoteForm(forms.ModelForm):
             )
         )
 
-    vehile_model = forms.CharField(
+    vehicle_model = forms.CharField(
         label="",
         widget=forms.TextInput(
             attrs={
@@ -46,7 +46,7 @@ class QuoteForm(forms.ModelForm):
     )
 
 
-    vehile_location = forms.CharField(
+    vehicle_location = forms.CharField(
         label="",
         widget=forms.TextInput(
             attrs={
@@ -74,7 +74,7 @@ class QuoteForm(forms.ModelForm):
             'fullname',
             'email',
             'phone',
-            'vehile_model',
-            'vehile_location',
+            'vehicle_model',
+            'vehicle_location',
             'message'
         ]

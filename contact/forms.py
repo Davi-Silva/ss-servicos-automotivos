@@ -29,7 +29,8 @@ class ContactForm(forms.ModelForm):
         widget=forms.TextInput(
             attrs={
                 'class': 'form-control',
-                "placeholder": "Telefone" 
+                "placeholder": "Telefone" ,
+                'type': 'number'
                 }
             )
         )

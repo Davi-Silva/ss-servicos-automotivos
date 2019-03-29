@@ -202,6 +202,48 @@
     font-size: 25px;
 }
 
+.about-section .col-md-4 {
+    padding: 0px;
+}
+
+.about-section .graduation-container {
+    margin: 10px 0;
+}
+
+.about-section .graduation-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 0px;
+    background: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-section .graduation-container #adm {
+    width: 150px;
+}
+
+.about-section .graduation-container h3,
+.about-section .graduation-container h4,
+.about-section .graduation-container h5 {
+    color: #fff;
+    text-align: center; 
+    margin: 0px;
+}
+
+.about-section .graduation-container h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.about-section .graduation-container h4 {
+    font-size: 0.9rem;
+}
+
+.about-section .graduation-container h5 {
+    font-size: 0.95rem;
+}
+
 .about-section p {
     color: #fff;
     text-align: justify;
@@ -222,6 +264,10 @@
     color: #fff;
     font-size: 18px;
     letter-spacing: 2px;
+}
+
+.about-section #header-educacao {
+    line-height: 0px;
 }
 
 .about-section a {
@@ -293,6 +339,17 @@
 .contact-section form p input:focus,
 .contact-section form p textarea:focus {
     box-shadow: none;
+}
+
+.contact-section input::-webkit-outer-spin-button,
+.contact-section input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.contact-section input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
 .contact-section form p textarea {

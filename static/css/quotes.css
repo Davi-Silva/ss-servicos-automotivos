@@ -57,6 +57,17 @@
     box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
+.quotes-page input::-webkit-outer-spin-button,
+.quotes-page input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.quotes-page input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
 .quotes-page form p label {
     display: block;
     text-align: center;
@@ -122,4 +133,23 @@
 .quotes-page form p #id_vehicle_location::placeholder {
     color: #495057;
     text-align-last:center;
+}
+
+
+
+/* QUOTE SENT SUCCESSFULLY */
+
+.quotes-sent-successfully-page .sub {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    padding: 250px;
+    transform: translate(-50%, -50%);
+}
+
+.quotes-sent-successfully-page p {
+    color: #495057;
+    line-height: 15px;
+    font-size: 24px;
 }
