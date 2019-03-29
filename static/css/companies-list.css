@@ -1,0 +1,101 @@
+.work-experience-list-page .big-title {
+    height: 400px;
+}
+
+.work-experience-list-page .big-title h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    transform: translateY(150px);
+}
+
+.work-experience-list-page .container {
+    margin-top: 5rem;
+}
+
+
+.work-experience-list-page #section-title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.work-experience-list-page #section-title::after {
+    content: '';
+    width: 13rem;
+    height: 3px;
+    background: #37669d;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(0.3rem);
+}
+
+.work-experience-list-page a  {
+    height: 250px;
+    width: 100%;
+}
+
+
+
+.work-experience-list-page .section-header p {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.work-experience-list-page .section-header p a {
+    color: #37669d;
+    font-size: 18px;
+    padding: 7px 10px;
+    border: 3px solid #37669d;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.work-experience-list-page header p a:hover {
+    background: #37669d;
+    color: #fff;
+    text-decoration: none;
+}
+
+.work-experience-list-page .work-experience-description-container {
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    opacity: 0;
+}
+
+.work-experience-list-page .col-md-6,
+.work-experience-list-page .col-md-12 {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+.work-experience-list-page .work-experience-description-container strong {
+    color: #000;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.work-experience-list-page .work-experience-description-container p {
+    color: #000;
+    font-size: 20px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-experience-list-page a img {
+    width: 100%;
+}
+
+.work-experience-list-page h5 {
+    margin: 10px 0 0 0;
+    font-size: 25px;
+}

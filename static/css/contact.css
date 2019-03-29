@@ -1,4 +1,3 @@
-
 .contact-page .big-title {
     height: 400px;
 }
@@ -21,7 +20,7 @@
 
 .contact-page .sub .quote {
     font-size: 26px;
-    line-height: 1rem;
+    
 }
 
 .contact-page .sub p {
@@ -106,4 +105,18 @@
     text-align: center;
     font-size: 23px;
     margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-page .big-title h1 {
+        font-size: 3rem;
+    }
+
+    .contact-page .sub .start-consulting {
+        font-size: 17px;
+    }
+
+    .contact-page .sub .quote {
+        font-size: 24px;
+    }
 }

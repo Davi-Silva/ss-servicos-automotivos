@@ -12,6 +12,12 @@
     transform: translateY(20rem)
 }
 
+.big-title .title h4 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
 .consulting-section {
     padding: 40px;
 }
@@ -323,6 +329,22 @@
     transform: translateY(2px);
 }
 
+
+
+@media screen and (max-width: 767px) {
+    .big-title .title h1 {
+        font-size: 2.3rem;
+    }
+
+    .big-title .title h4 {
+        font-size: 1rem;
+    }
+
+    .consulting-section header #section-title {
+        font-size: 1.8rem;
+    }
+
+}
 
 
 @media screen and (max-width: 408px) {

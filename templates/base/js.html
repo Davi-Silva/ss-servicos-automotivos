@@ -19,6 +19,12 @@ slim is missing ajax -->
 <script src='{% static "js/homepage.js" %}'></script>
 {% endif %}
 
+{% if "lista-empresas" in request.path %}
+<script src='{% static "js/companies-list.js" %}'></script>
+{% endif %}
+
+
+
 {% if 'orcamento' in request.path %}
 <script src='{% static "js/quotes.js" %}'></script>
 {% endif %}

@@ -27,6 +27,11 @@
 <link rel="stylesheet" href="{% static '/css/quotes.css' %}" />
 {% endif %}
 
+{% if 'lista-empresas' in request.path %}
+<link rel="stylesheet" href="{% static '/css/companies-list.css' %}" />
+{% endif %}
+
+
 {% if request.path == "/" %}
 <link rel="stylesheet" href="{% static '/css/homepage.css' %}" />
 {% endif %}

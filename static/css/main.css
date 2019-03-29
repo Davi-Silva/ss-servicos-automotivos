@@ -122,7 +122,15 @@ footer img {
 
 .copyright {
   color: #000;
-  font-family: Arial;
+  margin-bottom: -2px;
+}
+
+.designed-by {
+  color: #000;
+}
+
+.designed-by a {
+  color: #495057;
 }
 
 .footer-navbar-menu {
@@ -207,6 +215,11 @@ footer img {
     display: block;
     margin: 0 auto;
     text-align: center;
+  }
+
+  footer .designed-by {
+    text-align: center;
+    margin-bottom: -2px;
   }
 
   footer .social-media-list {

@@ -7,7 +7,10 @@ def blog_home(request):
 
 
 def blog_companies_list(request):
-    return render(request, "companies-list.html", {})
+    context = {
+        'title': 'TODA MINHA TRAJETÓRIA PROFISSIONAL'
+    }
+    return render(request, "companies-list.html", context)
 
 
 def blog_vale(request):

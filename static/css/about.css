@@ -18,3 +18,10 @@
     color: #333;
     font-size: 20px;
 }
+
+@media screen and (max-width: 767px) {
+    .about-page .big-title h1 {
+        font-size: 3rem;
+    }
+
+}

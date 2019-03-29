@@ -19,6 +19,7 @@
 .quotes-page .sub .quote {
     color: #495057;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .quotes-page .sub .start-consulting {
