@@ -3,6 +3,7 @@ from django.shortcuts import redirect, render
 from contact.forms import ContactForm
 
 
+
 def homepage(request):
     if request.method == "POST":
         contact_form = ContactForm(request.POST)

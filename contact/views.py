@@ -11,8 +11,7 @@ def contact(request):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.success(request, 'Form submission successful')
-            return redirect("homepage")
+            return redirect("contact:sent")
         else: 
             print(contact_form.errors)
     else:
@@ -21,8 +20,9 @@ def contact(request):
     context= {
         "title" : "CONTATO",
         "form" : contact_form,
-        "message" : messages
     }
-
-
     return render(request, "contact.html", context)
+
+
+def contact_success(request):
+    return render(request, "contact_success.html", {})

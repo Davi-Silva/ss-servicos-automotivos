@@ -23,6 +23,10 @@
 <link rel="stylesheet" href="{% static '/css/consulting.css' %}" />
 {% endif %}
 
+{% if 'orcamento' in request.path %}
+<link rel="stylesheet" href="{% static '/css/quotes.css' %}" />
+{% endif %}
+
 {% if request.path == "/" %}
 <link rel="stylesheet" href="{% static '/css/homepage.css' %}" />
 {% endif %}

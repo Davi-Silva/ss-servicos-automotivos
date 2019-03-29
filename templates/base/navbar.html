@@ -23,7 +23,7 @@
                     </div>
                 </li>
                 <li class="nav-item {% if request.path == product_list_url %}active{% endif %}">
-                    <a class="nav-link" href="{% url 'contact' %}">CONTATO</a>
+                    <a class="nav-link" href="{% url 'contact:home' %}">CONTATO</a>
                 </li>
                 <li class="nav-item {% if request.path == product_list_url %}active{% endif %}" id="sobre-li">
                     <a class="nav-link" href="{% url 'about' %}">SOBRE</a>
