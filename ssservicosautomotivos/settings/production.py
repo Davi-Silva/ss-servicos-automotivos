@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # third parties
+    'dj_database_url',
+
     # own
     'blog',
     'contact',
