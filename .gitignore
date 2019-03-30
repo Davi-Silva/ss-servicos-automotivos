@@ -1,4 +1,5 @@
 ssservicosautomotivos/settings/local.py
+ssservicosautomotivos/settings/local2.py
 *.py[cod]
 __pycache__/
 *.py[cod]
