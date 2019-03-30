@@ -25,7 +25,7 @@ SECRET_KEY = 'pze1guv#-jf^vasyj1ryv44^5h1-*28e!=$6-q@3xm-*3xr^kc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://ss-servicos-automotivos.herokuapp.com/', '.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
