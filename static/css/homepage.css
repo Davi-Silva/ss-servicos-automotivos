@@ -67,6 +67,52 @@
     text-decoration: none;
 }
 
+.weekly-tips-section #section-title {
+    margin: 2rem 0;
+}
+
+.weekly-tips-section #section-title::after {
+    content: '';
+    height: 3px;
+    width: 9rem;
+    margin: 0 auto;
+    display: block;
+    background: #777;
+    transform: translateY(0.3rem);
+}
+
+.weekly-tips-section img {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #777;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 3rem auto 0 auto;
+    display: block;
+}
+
+.weekly-tips-section button {
+    text-align: center;
+    margin: 1rem auto;
+    display: block;
+    background: transparent;
+    border: 2px solid #777;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: 600;
+    color: #777;
+    border-radius: 5px;
+}
+
+.weekly-tips-section button:focus {
+    outline: none;
+}
+
+.weekly-tips-section p {
+    text-align: center;
+    font-size: 20px;
+}
+
 .work-experience-section {
     background: transparent;
     padding: 5rem 0 0 0;
@@ -386,7 +432,9 @@
     transform: translateY(2px);
 }
 
-
+@media screen and (max-width: 991px) {
+    
+}
 
 @media screen and (max-width: 767px) {
     .big-title .title h1 {
@@ -409,4 +457,48 @@
         height: 250px!important;
         width: 250px!important;
     }
+
+    .consulting-section p {
+        font-size: 18px!important;
+    }
+
+    .work-experience-section #section-title,
+    .about-section #section-title,
+    .contact-section #section-title {
+        font-size: 1.8rem!important;
+    }
+
+    .about-section #mec {
+        height: 100px!important;
+        width: 100px!important;
+    }
+}
+
+@media screen and (max-width: 301px) {
+    .contact-section header #section-title {
+        font-size: 1.6rem!important;
+    }
+
+    .contact-section header #section-title::after {
+        content: "";
+        background: #000;
+        height: 3px;
+        width: 6rem;
+        display: block;
+        margin: 0 auto;
+        transform: translateY(0.4rem);
+    }
+
+
+}
+
+
+@media screen and (max-width: 350px) {
+    .consulting-section #consulting-img {
+        height: 180px!important;
+        width: 180px!important;
+    }
+
+
+
 }

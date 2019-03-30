@@ -4,7 +4,7 @@
 
 .work-experience-list-page .big-title h1 {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
     transform: translateY(150px);
 }
@@ -98,4 +98,34 @@
 .work-experience-list-page h5 {
     margin: 10px 0 0 0;
     font-size: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .work-experience-list-page .big-title h1 {
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 538px) {
+    .work-experience-list-page .big-title h1 {
+        font-size: 2rem;
+    }
+
+
+    .quotes-page .consulting-container p {
+        font-size: 16px;
+    }
+    
+    .quotes-page a {
+
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .work-experience-list-page .container {
+        margin-top: 0rem!important;
+    }
 }

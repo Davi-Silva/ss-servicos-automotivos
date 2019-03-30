@@ -1,4 +1,3 @@
-
 .quotes-page .big-title {
     height: 400px;
 }
@@ -135,21 +134,63 @@
     text-align-last:center;
 }
 
+@media screen and (max-width: 767px) {
+    .quotes-page .big-title h1 {
+        font-size: 3rem;
+    }
+
+    .quotes-page .sub .start-consulting {
+        font-size: 17px;
+    }
+
+    .quotes-page .sub .quote {
+        font-size: 24px;
+    }
+
+    .quotes-page a {
+        padding: 0.5rem 1rem;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .quotes-page .big-title h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .quotes-page .consulting-container p {
+        font-size: 16px;
+    }
+    
+    .quotes-page a {
+
+    }
+}
 
 
 /* QUOTE SENT SUCCESSFULLY */
 
 .quotes-sent-successfully-page .sub {
-    position: relative;
-    top: 50%;
+    margin: 15rem 0;
     text-align: center;
-    left: 50%;
-    padding: 250px;
-    transform: translate(-50%, -50%);
+
 }
 
 .quotes-sent-successfully-page p {
     color: #495057;
-    line-height: 15px;
+    line-height: 28px;
     font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .quotes-sent-successfully-page p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .quotes-sent-successfully-page p {
+        font-size: 20px;
+    }
 }

@@ -108,7 +108,7 @@
 .contact-page #phone i {
     text-align: center;
     display: block;
-    font-size: 23px;
+    font-size: 30px;
 }
 
 .contact-page #phone p {
@@ -132,20 +132,44 @@
     }
 }
 
+@media screen and (max-width: 538px) {
+    .contact-page .big-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-page .sub .start-consulting {
+        font-size: 15px;
+    }
+
+    .contact-page .sub .quote {
+        font-size: 22px;
+    }
+}
+
+
 
 /* CONTACT SENT SUCCESSFULLY */
 
 .contact-sent-successfully-page .sub {
-    position: relative;
-    top: 50%;
+    margin: 15rem 0;
     text-align: center;
-    left: 50%;
-    padding: 250px;
-    transform: translate(-50%, -50%);
 }
 
 .contact-sent-successfully-page p {
     color: #495057;
     line-height: 25px;
     font-size: 24px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .contact-sent-successfully-page p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .contact-sent-successfully-page p {
+        font-size: 20px;
+    }
 }

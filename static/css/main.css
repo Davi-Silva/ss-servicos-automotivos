@@ -72,6 +72,10 @@ body {
   border-bottom-right-radius: 5px;
 }
 
+.navbar-light .navbar-nav #about-menu-item i {
+  font-size: 18px;
+}
+
 .dropdown-menu {
   background: transparent;
   color: #fff;
@@ -183,6 +187,8 @@ footer img {
     border-bottom-left-radius: 5px;
     border-top-right-radius: unset;
   }
+
+
 
   footer .footer-navbar-menu li {
     float: right;
