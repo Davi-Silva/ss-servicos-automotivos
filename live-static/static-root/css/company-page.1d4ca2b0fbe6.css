@@ -1,0 +1,38 @@
+.company-page h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.company-page .description {
+    padding: 2.5rem;
+}
+
+.company-page .description .occupation,
+.company-page .description .location,
+.company-page .description .job {
+    margin: 0 0 2rem 0;
+}
+
+.company-page .description .location #address {
+    padding: 0!important;
+    font-size: 1.3rem;
+}
+
+.company-page .description .job ul {
+    list-style: none;
+}
+
+.company-page .description .job ul li {
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.company-page .description p {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+/*.company-page .col-md-6 {*/
+    /*padding: 0px;*/
+/*}*/

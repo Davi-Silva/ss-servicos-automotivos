@@ -1,0 +1,175 @@
+.contact-page .big-title {
+    height: 400px;
+}
+
+.contact-page .big-title h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    transform: translateY(150px);
+}
+
+.contact-page .sub {
+    margin: 20px 0 10px 0;
+}
+
+.contact-page .sub .start-consulting {
+    font-size: 20px;
+    
+}
+
+.contact-page .sub .quote {
+    font-size: 26px;
+    
+}
+
+.contact-page .sub p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #495057;
+}
+
+.contact-page form {
+    box-sizing: border-box;
+    margin: 3rem;
+}
+
+.contact-page p {
+    margin-bottom: 0.5rem;
+}
+.contact-page form p input,
+.contact-page form p textarea {
+    display: block;
+    max-width: 35rem;
+    min-width: 5rem;
+    margin:  auto;
+    padding: 10px 30px;
+    background: rgb(73, 80, 87, 0.2);
+    text-align: center;
+    color: #495057;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    transition: 0.3s all ease-in-out;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page input::-webkit-outer-spin-button,
+.contact-page input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.contact-page input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.contact-page form p textarea {
+    resize: none;
+}
+
+.contact-page form button {
+    display: block;
+    max-width: 35rem;
+    min-width: 5rem;
+    text-align: center;
+    font-size: 25px;
+    color: #495057;
+    margin: 0 auto 3rem auto;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+}
+
+.contact-page form button:active {
+    transform: translateY(2px);
+}
+
+.contact-page form p input:focus,
+.contact-page form p textarea:focus,
+.contact-page form button:focus {
+    outline: none;
+    box-shadow: none;
+    transition: 0.3s all ease-in-out;
+}
+
+.contact-page #phone {
+    color: #495057;
+    line-height: 15px;
+}
+
+.contact-page #phone:hover {
+    text-decoration: none;
+}
+
+.contact-page #phone i {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+
+.contact-page #phone p {
+    display: block;
+    text-align: center;
+    font-size: 23px;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-page .big-title h1 {
+        font-size: 3rem;
+    }
+
+    .contact-page .sub .start-consulting {
+        font-size: 17px;
+    }
+
+    .contact-page .sub .quote {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .contact-page .big-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-page .sub .start-consulting {
+        font-size: 15px;
+    }
+
+    .contact-page .sub .quote {
+        font-size: 22px;
+    }
+}
+
+
+
+/* CONTACT SENT SUCCESSFULLY */
+
+.contact-sent-successfully-page .sub {
+    margin: 15rem 0;
+    text-align: center;
+}
+
+.contact-sent-successfully-page p {
+    color: #495057;
+    line-height: 25px;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .contact-sent-successfully-page p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .contact-sent-successfully-page p {
+        font-size: 20px;
+    }
+}

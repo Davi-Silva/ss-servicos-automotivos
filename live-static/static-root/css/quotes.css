@@ -1,0 +1,196 @@
+.quotes-page .big-title {
+    height: 400px;
+}
+
+.quotes-page .big-title h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    transform: translateY(150px);
+}
+
+
+.quotes-page .sub {
+    margin-top: 1rem;
+}
+
+.quotes-page .sub .start-consulting,
+.quotes-page .sub .quote {
+    color: #495057;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.quotes-page .sub .start-consulting {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.quotes-page .sub .quote {
+    font-size: 26px;
+}
+
+.quotes-page form {
+    box-sizing: border-box;
+    margin: 2rem 3rem 3rem 3rem;
+}
+
+.quotes-page p {
+    margin-bottom: 0.5rem;
+}
+.quotes-page form p input,
+.quotes-page form p textarea,
+.quotes-page form p select {
+    display: block;
+    max-width: 35rem;
+    min-width: 5rem;
+    margin: 0 auto;
+    padding: 10px 30px;
+    background: rgb(73, 80, 87, 0.2);
+    text-align: center;
+    color: #495057;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    transition: 0.3s all ease-in-out;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quotes-page input::-webkit-outer-spin-button,
+.quotes-page input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.quotes-page input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.quotes-page form p label {
+    display: block;
+    text-align: center;
+    color: #495057;
+    font-size: 19px;
+    margin-bottom: 0.2rem;
+}
+
+
+.quotes-page form p textarea {
+    resize: none;
+}
+
+.quotes-page form button {
+    display: block;
+    max-width: 35rem;
+    min-width: 5rem;
+    text-align: center;
+    font-size: 25px;
+    color: #495057;
+    margin: 0 auto 3rem auto;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+}
+
+.quotes-page form button:active {
+    transform: translateY(2px);
+}
+
+.quotes-page form p input:focus,
+.quotes-page form p textarea:focus,
+.quotes-page form button:focus,
+.quotes-page form select:focus {
+    outline: none;
+    box-shadow: none;
+    transition: 0.3s all ease-in-out;
+}
+
+.quotes-page form #id_second_car_model,
+.quotes-page form #id_third_car_model {
+    display: none;
+}
+
+.quotes-page form p #id_multiple_cars {
+    width: 100%;
+    display: table;
+    text-align: center;
+    color: #495057;
+}
+
+.quotes-page form p #id_vehicle_location {
+    width: 100%;
+    display: table;
+    text-align: center;
+    color: #495057;
+    
+}
+
+.quotes-page form p #id_multiple_cars::placeholder,
+.quotes-page form p #id_vehicle_location::placeholder {
+    color: #495057;
+    text-align-last:center;
+}
+
+@media screen and (max-width: 767px) {
+    .quotes-page .big-title h1 {
+        font-size: 3rem;
+    }
+
+    .quotes-page .sub .start-consulting {
+        font-size: 17px;
+    }
+
+    .quotes-page .sub .quote {
+        font-size: 24px;
+    }
+
+    .quotes-page a {
+        padding: 0.5rem 1rem;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .quotes-page .big-title h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .quotes-page .consulting-container p {
+        font-size: 16px;
+    }
+    
+    .quotes-page a {
+
+    }
+}
+
+
+/* QUOTE SENT SUCCESSFULLY */
+
+.quotes-sent-successfully-page .sub {
+    margin: 15rem 0;
+    text-align: center;
+
+}
+
+.quotes-sent-successfully-page p {
+    color: #495057;
+    line-height: 28px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .quotes-sent-successfully-page p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .quotes-sent-successfully-page p {
+        font-size: 20px;
+    }
+}

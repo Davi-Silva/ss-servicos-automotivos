@@ -1,0 +1,88 @@
+
+.about-page .big-title {
+    height: 400px;
+}
+
+.about-page .big-title h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    transform: translateY(150px);
+}
+
+.about-page .education-header {
+    margin: 1.5rem 0;
+}
+
+.about-page .about-container {
+    margin: 2rem 0;
+}
+
+.about-page .about-container p {
+    color: #333;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.about-page .graduation-container {
+    margin: 2rem 0;
+}
+
+.about-container .graduation-container h4 {
+    margin-top: 10px;
+}
+
+.about-page .graduation-container #mec,
+.about-page .graduation-container #adm,
+.about-page .graduation-container #maintainance {
+    height: 110px!important;
+    width: 110px!important;
+    margin: 0 0 5px 0;
+}
+
+.about-page .graduation-container h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.about-page .graduation-container h4 {
+    font-size: 1.2rem;
+}
+
+.about-page .graduation-container h5 {
+    font-size: 1.25rem;
+}
+
+.about-page .graduation-container #adm {
+    width: 180px!important;
+}
+
+.about-page .graduation-container {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .about-page .big-title h1 {
+        font-size: 3rem;
+    }
+
+    .contact-page .about-container p {
+        font-size: 17px;
+    }
+
+    .about-page .about-container p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .about-page .big-title h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .about-page .about-container p {
+        font-size: 18px;
+    }
+    
+}
