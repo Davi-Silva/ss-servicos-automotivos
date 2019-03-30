@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # third parties
     'dj_database_url',
+    'whitenoise',
 
     # own
     'blog',
